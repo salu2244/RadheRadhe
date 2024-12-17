@@ -1,0 +1,354 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header .navbar a:hover {
+    color: #ffdd57;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('back.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff5733;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #c70039;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: hsl(340, 84%, 51%);
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer Section */
+
+
+.footer {
+    width: 100%;
+    background-color: #333; /* अपनी पसंद के अनुसार बैकग्राउंड रंग चुनें */
+    color: #fff; /* टेक्स्ट का रंग */
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.footer h2, 
+.footer h3, 
+.footer p {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.footer a {
+    color: #ffcc00; /* लिंक का रंग */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    width: 100%; /* मैप को पूरी चौड़ाई दें */
+    overflow: hidden;
+    margin: 20px auto; /* अपने डिज़ाइन के लिए मार्जिन सेट करें */
+}
+
+iframe {
+    border: none;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .btn {
+        font-size: 14px;
+    }
+
+    .products h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header .navbar a {
+        font-size: 16px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero img {
+        margin: 10px 0;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .products h2 {
+        font-size: 1.5rem;
+    }
+
+    .product h3 {
+        font-size: 1rem;
+    }
+
+    .product p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/*----about us css----========-----*/
+
+/* Global Styles */
+
+
+/* General Styling */
+.about {
+    background: linear-gradient(to right, #f0e5d8, #e6c59f); /* Elegant gradient background */
+    color: #333;
+    padding: 80px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* About Section */
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2rem; /* Adjusted font size to match product section */
+    color: #d1a054; /* Gold color */
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+    font-size: 1rem; /* Adjusted font size to match product section */
+    color: #5a4f47; /* Dark brown color for text */
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Last paragraph styling */
+.about p:last-of-type {
+    font-weight: bold;
+    font-size: 1rem; /* Adjusted font size to match product section */
+    margin-top: 40px;
+    color: #d1a054;
+    text-transform: uppercase;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: hsl(340, 84%, 51%);
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Services Section */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #d1a054; /* Gold border */
+}
+
+.service:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background-color: #f1f1f1;
+}
+
+.service h3 {
+    font-size: 1.3rem;
+    color: #d1a054;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.service p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Add some spacing for mobile devices */
+@media (max-width: 768px) {
+    .about h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about p {
+        font-size: 1rem;
+    }
+    
+    .service {
+        padding: 20px;
+    }
+}
